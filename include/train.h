@@ -4,7 +4,7 @@
 #define INCLUDE_TRAIN_H_
 
 class Train {
-private:
+ private:
     struct Car {
         bool light;
         Car* next;
@@ -12,11 +12,11 @@ private:
     };
     int countOp;
     Car* first;
-public:
+ public:
     Train();
     ~Train();
     void addCar(bool light);
     int getLength();
-    int getOpCount(); 
+    int getOpCount();
 };
 #endif  // INCLUDE_TRAIN_H_#pragma once
